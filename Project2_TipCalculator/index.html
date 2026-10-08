@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nana Asare -Tip Calculator Project</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <main class="card">
+    <h1>Tip Calculator</h1>
+ 
+    <label for="bill">Bill Amount</label>
+    <input type="number" id="bill" placeholder="e.g. 80">
+ 
+    <label for="tip">Tip Percentage</label>
+    <input type="number" id="tip" placeholder="e.g. 10">
+ 
+    <button id="calculate-btn">Calculate</button>
+ 
+    <div class="results">
+      <p id="message"></p>
+      <div class="result-row">
+        <span>Tip Amount</span>
+        <span id="tip-amount">0.00</span>
+      </div>
+      <div class="result-row total">
+        <span>Total Bill</span>
+        <span id="total-amount">0.00</span>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

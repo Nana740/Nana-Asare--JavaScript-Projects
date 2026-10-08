@@ -1,0 +1,66 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+  background: #f0f2f5;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 { margin: 0 0 18px; font-size: 24px; color: #222; }
+
+.input-row { display: flex; gap: 8px; margin-bottom: 18px; }
+
+input {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+}
+input:focus { outline: 2px solid #4c6ef5; border-color: transparent; }
+
+button {
+  padding: 10px 14px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #4c6ef5;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover { background: #3b5bdb; }
+
+ul { list-style: none; margin: 0; padding: 0; }
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fb;
+  border-radius: 8px;
+}
+
+li span { flex: 1; cursor: pointer; color: #222; }
+
+/* Completed tasks: grayed out with a strike-through */
+li.completed span { color: #999; text-decoration: line-through; }
+
+li button.delete { background: #fa5252; padding: 6px 10px; font-size: 13px; }
+li button.delete:hover { background: #e03131; }
